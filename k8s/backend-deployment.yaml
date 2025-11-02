@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: todo-backend
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: todo-backend
+  template:
+    metadata:
+      labels:
+        app: todo-backend
+    spec:
+      containers:
+        - name: backend
+          image: uchihavivek/todo-app:v1
+          ports:
+            - containerPort: 3000
+          env:
+            - name: SUPABASE_URL
+              valueFrom:
+                configMapKeyRef:
+                  name: backend-config
+                  key: SUPABASE_URL
+            - name: SUPABASE_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: backend-secrets
+                  key: SUPABASE_KEY

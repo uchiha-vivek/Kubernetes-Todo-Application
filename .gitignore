@@ -1,0 +1,90 @@
+# ===============================
+# 🚀 Node / Express App
+# ===============================
+
+# Dependency directories
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files
+.env
+.env.local
+.env.development
+.env.production
+
+# Build output
+dist/
+build/
+coverage/
+
+# Local database or cache files
+*.sqlite
+*.db
+.cache/
+.tmp/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ==================================
+# ☸️ Kubernetes / Docker Related
+# ==================================
+
+# Minikube and Kubernetes local config
+.kube/
+minikube/
+*.crt
+*.pem
+*.key
+*.token
+
+# Docker environment & volumes
+**/.dockerignore
+**/docker-compose.override.yml
+**/docker-compose.local.yml
+**/docker-compose.dev.yml
+
+# Ignore local Docker build artifacts
+*.tar
+*.pid
+*.sock
+
+# ==================================
+# ⚙️ Secrets & Configs
+# ==================================
+
+# Kubernetes secrets (never commit real ones!)
+k8s/secret.yaml
+# Optional: ignore your configmap if it has private data
+# k8s/configmap.yaml
+
+# Temporary YAMLs
+k8s/tmp/
+*.bak
+*.backup
+*.tmp
+
+# ==================================
+# 🧰 Logs / Temp
+# ==================================
+
+# Logs from containers or minikube
+*.out
+*.err
+
+# Local dev environment
+.envrc
