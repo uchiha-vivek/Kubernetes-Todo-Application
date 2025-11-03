@@ -6,6 +6,15 @@
 - **Supabase** for storing data
 
 
+<p align="center" style="display: flex; justify-content: center; gap: 150px;">
+   <img src="./assets/k8s.png" width="300" alt="k8s">
+   <img src="./assets/docker.png" width="300" alt="docker">
+</p>
+
+
+
+
+
 Your **env** file for backend 
 
 ```bash
@@ -230,3 +239,5 @@ Run the service
 ```bash
 minikube service todo-backend-service
 ```
+
+After the service runs, navigate to `http://192.168.49.2:31234/todos`
