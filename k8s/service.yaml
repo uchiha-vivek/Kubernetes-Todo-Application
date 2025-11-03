@@ -12,22 +12,3 @@ spec:
   type: NodePort         
 
 
-`service.yaml`
-
-
-```bash
-apiVersion: v1
-kind: Service
-metadata:
-  name: todo-backend-service
-spec:
-  selector:
-    app: todo-backend    
-  ports:
-    - protocol: TCP
-      port: 3000         
-      targetPort: 3000   
-  type: NodePort        
-```
-
-
