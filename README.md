@@ -241,3 +241,13 @@ minikube service todo-backend-service
 ```
 
 After the service runs, navigate to `http://192.168.49.2:31234/todos`
+
+
+
+### Future Enhancements
+
+1. Building Cloud native approach
+2. Deploying kubernetes workloads using **Azure Kubernetes Service**
+3. Store your docker images using **Azure Container Registry**
+4. Automating builds using **Github Actions**
+5. For pod and cluster Health Management - **Azure MOnitor** and **Log Analytics**
